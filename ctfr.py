@@ -8,6 +8,7 @@
 
 ## # LIBRARIES # ##
 import re
+import sys
 import requests
 
 ## # CONTEXT VARIABLES # ##
@@ -61,7 +62,6 @@ def main():
 	for (key,value) in enumerate(req.json()):
 		subdomains.append(value['name_value'])
 
-	
 	print("\n[!] ---- TARGET: {d} ---- [!] \n".format(d=target))
 
 	subdomains = sorted(set(subdomains))
@@ -71,9 +71,10 @@ def main():
 		if output is not None:
 			save_subdomains(subdomain,output)
 
-	print("\n\n[!] . BYE BYE")
-
-
-
-main()
-	
+if __name__ == '__main__':
+	try:
+		main()
+		print("\n\n[!] . BYE BYE")
+	except KeyboardInterrupt:
+		print("\n\n[!] . Operacion cancelada por el usuario.")
+		sys.exit(1)
