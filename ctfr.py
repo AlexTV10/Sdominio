@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 """
 ------------------------------------------------------------------------------
-	CTFR - 04.03.18.02.10.00 - Samael A. (Samy)
+	CTFR - Sub Dominios 1.00 - Alex (TV)
 ------------------------------------------------------------------------------
 """
 
@@ -32,7 +32,7 @@ def banner():
          \____| |_| |_|   |_| \_\\
 	
      Version {v} - Hey don't miss AXFR!
-    Made by Samael  (Samy)
+    Alex (TV)
 	'''.format(v=version)
 	print(b)
 	
@@ -71,7 +71,7 @@ def main():
 		if output is not None:
 			save_subdomains(subdomain,output)
 
-	print("\n\n[!]  . Hecho  Ten un Excelente Día! ;).")
+	print("\n\n[!]  . BYE BYE
 
 
 main()
