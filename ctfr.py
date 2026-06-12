@@ -71,7 +71,8 @@ def main():
 		if output is not None:
 			save_subdomains(subdomain,output)
 
-	print("\n\n[!]  . BYE BYE
+	pprint("\n\n[!] . BYE BYE")
+
 
 
 main()
